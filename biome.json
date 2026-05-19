@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "includes": ["**/*.ts", "**/*.css", "**/*.html", "!dist", "!node_modules"],
+    "ignoreUnknown": true
+  },
+  "formatter": {
+    "indentStyle": "space",
+    "lineWidth": 100
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noConsole": {
+          "fix": "none",
+          "level": "warn",
+          "options": { "allow": ["error", "warn", "info"] }
+        }
+      }
+    }
+  }
+}
