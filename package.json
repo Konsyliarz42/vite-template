@@ -9,11 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^6",
+    "react": "^19",
+    "react-dom": "^19",
     "vite": "^8"
   },
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@types/node": "^25",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "typescript": "^6"
   }
 }
