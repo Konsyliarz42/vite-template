@@ -1,4 +1,5 @@
-import app from "@/app";
+import { createRoot } from "react-dom/client";
+import App from "./src/App";
 
 // Get root elements
 const html = document.querySelector("html");
@@ -16,4 +17,4 @@ html.lang = "en";
 html.dir = "ltr";
 
 // Render app
-body.append(app);
+createRoot(body).render(<App />);
