@@ -72,6 +72,7 @@
         "noUselessElse": "info",
         "useCollapsedElseIf": "info",
         "useCollapsedIf": "info",
+        "useConsistentCurlyBraces": "info",
         "useConsistentEnumValueType": "error",
         "useConsistentMethodSignatures": "info",
         "useConsistentObjectDefinitions": "info",
