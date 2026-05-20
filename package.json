@@ -4,9 +4,9 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
+    "fix": "biome check --write --unsafe",
     "preview": "vite preview"
   },
-  "dependencies": {},
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@types/node": "^25",
