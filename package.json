@@ -1,16 +1,22 @@
 {
   "name": "app",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "fix": "biome check --write --unsafe",
+    "fix": "biome check --write --unsafe && svelte-check",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@types/node": "^25",
-    "typescript": "^6",
+    "svelte-check": "^4",
+    "typescript": "^6"
+  },
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7",
+    "svelte": "^5",
     "vite": "^8"
   }
 }

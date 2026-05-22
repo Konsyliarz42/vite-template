@@ -1,8 +1,9 @@
 import path from "node:path";
-import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig, type PluginOption } from "vite";
 
 export default defineConfig({
-  plugins: [],
+  plugins: [svelte() as PluginOption],
   clearScreen: false,
   resolve: {
     alias: {

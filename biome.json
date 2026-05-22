@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "includes": ["**/*.ts", "**/*.css", "**/*.html", "!dist", "!node_modules"],
+    "includes": ["**/*.ts", "**/*.css", "**/*.html", "**/*.svelte", "!dist", "!node_modules"],
     "ignoreUnknown": true
   },
   "formatter": {
@@ -18,5 +18,25 @@
         }
       }
     }
-  }
+  },
+  "html": {
+    "experimentalFullSupportEnabled": false
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.svelte"],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ]
 }

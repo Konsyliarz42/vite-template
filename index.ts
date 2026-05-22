@@ -1,4 +1,5 @@
-import app from "@/app";
+import { mount } from "svelte";
+import App from "@/App.svelte";
 
 // Get root elements
 const html = document.querySelector("html");
@@ -16,4 +17,4 @@ html.lang = "en";
 html.dir = "ltr";
 
 // Render app
-body.append(app);
+export default mount(App, { target: body });

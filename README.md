@@ -1,10 +1,10 @@
 # Vite Template
 
-- **Language**:    [TypeScript]
-- **Formatter**:   [Biome]
-- **Linter**:      [Biome]
+- **Language**: [TypeScript]
+- **Formatter**: [Biome]
+- **Linter**: [Biome]
 - **Build tools**: [Vite]
-- **Framework**:   -
+- **Framework**: [Svelte]
 
 ## First Steps
 
@@ -26,7 +26,7 @@
 
 - `build` - Build production files to `dist` directory
 - `dev` - Run dev server on http://localhost:3002
-- `fix` - Format code, organize imports and apply safe and unsafe fixes
+- `fix` - Format code, organize imports, apply safe and unsafe fixes and run svelte checking
 - `preview` - Run server from `dist` directory on http://0.0.0.0:3002
 
 ## Aliases
@@ -39,3 +39,4 @@
 [TypeScript]: https://www.typescriptlang.org/
 [Biome]: https://biomejs.dev/
 [Vite]: https://vite.dev/
+[Svelte]: https://svelte.dev/
