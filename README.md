@@ -1,10 +1,10 @@
 # Vite Template
 
-- **Language**:    [TypeScript]
-- **Formatter**:   [Biome]
-- **Linter**:      [Biome]
+- **Language**: [TypeScript]
+- **Formatter**: [Biome]
+- **Linter**: [Biome]
 - **Build tools**: [Vite]
-- **Framework**:   -
+- **Framework**: -
 
 ## First Steps
 

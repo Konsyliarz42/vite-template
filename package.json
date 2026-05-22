@@ -1,16 +1,19 @@
 {
   "name": "app",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
     "fix": "biome check --write --unsafe",
     "preview": "vite preview"
   },
+  "dependencies": {
+    "vite": "^8"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2",
     "@types/node": "^25",
-    "typescript": "^6",
-    "vite": "^8"
+    "typescript": "^6"
   }
 }
