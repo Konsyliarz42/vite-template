@@ -32,6 +32,9 @@
     "indentStyle": "space",
     "lineWidth": 100
   },
+  "html": {
+    "experimentalFullSupportEnabled": false
+  },
   "linter": {
     "domains": {
       "project": "recommended",
@@ -109,5 +112,22 @@
         "useErrorMessage": "error"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.svelte"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          },
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          }
+        }
+      }
+    }
+  ]
 }

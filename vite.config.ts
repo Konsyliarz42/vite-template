@@ -1,9 +1,10 @@
 import path from "node:path";
-import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig, type PluginOption } from "vite";
 
 export default defineConfig({
   clearScreen: false,
-  plugins: [],
+  plugins: [svelte() as PluginOption],
   preview: {
     host: "0.0.0.0",
     port: 3002,
