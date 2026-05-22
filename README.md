@@ -4,11 +4,7 @@
 - **Formatter**: [Biome]
 - **Linter**: [Biome]
 - **Build tools**: [Vite]
-<<<<<<< HEAD
-- **Framework**: -
-=======
 - **Framework**: [React]
->>>>>>> 0c05eb5 (update)
 
 ## First Steps
 
