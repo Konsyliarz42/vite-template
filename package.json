@@ -7,6 +7,7 @@
     "check": "biome check && tsc --noEmit",
     "dev": "vite",
     "fix": "biome check --write --unsafe",
+    "format": "biome format",
     "preview": "vite preview"
   },
   "dependencies": {
