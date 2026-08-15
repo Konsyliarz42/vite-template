@@ -95,7 +95,6 @@
         "noDuplicatedSpreadProps": "error",
         "noEqualsToNull": "error",
         "noEvolvingTypes": "error",
-        "noExplicitAny": "off",
         "noForIn": "warn",
         "noLeakedRender": "warn",
         "noReactForwardRef": "error",
