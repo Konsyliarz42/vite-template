@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "check": "biome check",
     "dev": "vite",
     "fix": "biome check --write --unsafe",
+    "format": "biome format",
     "preview": "vite preview"
   },
   "dependencies": {
