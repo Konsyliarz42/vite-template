@@ -1,21 +1,112 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "assist": {
+    "actions": {
+      "preset": "recommended",
+      "source": {
+        "noDuplicateClasses": "on",
+        "useSortedAttributes": "on",
+        "useSortedEnumMembers": "on",
+        "useSortedInterfaceMembers": "on",
+        "useSortedKeys": "on"
+      }
+    },
+    "enabled": true
+  },
   "files": {
-    "includes": ["**/*.ts", "**/*.css", "**/*.html", "!dist", "!node_modules"],
-    "ignoreUnknown": true
+    "ignoreUnknown": true,
+    "includes": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.css",
+      "**/*.json",
+      "**/*.html",
+      "!**/package.json",
+      "!**/package-lock.json",
+      "!!**/dist",
+      "!!**/node_modules"
+    ]
   },
   "formatter": {
+    "enabled": true,
     "indentStyle": "space",
     "lineWidth": 100
   },
   "linter": {
+    "domains": {
+      "project": "recommended",
+      "react": "recommended",
+      "test": "recommended",
+      "types": "recommended"
+    },
+    "enabled": true,
     "rules": {
+      "complexity": {
+        "noUselessCatchBinding": "warn",
+        "noUselessReturn": "warn",
+        "useArrayFind": "error"
+      },
+      "correctness": {
+        "noGlobalDirnameFilename": "error",
+        "noNestedComponentDefinitions": "error",
+        "noReactPropAssignments": "error",
+        "noUndeclaredDependencies": "error",
+        "noUndeclaredVariables": {
+          "level": "error",
+          "options": {
+            "checkTypes": true
+          }
+        },
+        "useUniqueElementIds": "warn"
+      },
+      "performance": {
+        "noJsxPropsBind": "warn",
+        "useTopLevelRegex": "warn"
+      },
+      "preset": "recommended",
+      "style": {
+        "noNegationElse": "info",
+        "noParameterAssign": "error",
+        "noParameterProperties": "error",
+        "noUnusedTemplateLiteral": "info",
+        "noUselessElse": "info",
+        "useCollapsedElseIf": "info",
+        "useCollapsedIf": "info",
+        "useConsistentEnumValueType": "error",
+        "useConsistentMethodSignatures": "info",
+        "useConsistentObjectDefinitions": "info",
+        "useConsistentTypeDefinitions": "info",
+        "useForOf": "info",
+        "useObjectSpread": "info",
+        "useReactFunctionComponents": "error",
+        "useSelfClosingElements": "info",
+        "useSpreadOverApply": "info",
+        "useThrowNewError": "error",
+        "useTrimStartEnd": "warn"
+      },
       "suspicious": {
         "noConsole": {
-          "fix": "none",
-          "level": "warn",
-          "options": { "allow": ["error", "warn", "info"] }
-        }
+          "level": "error",
+          "options": {
+            "allow": ["error", "info", "warn"]
+          }
+        },
+        "noDuplicatedSpreadProps": "error",
+        "noEqualsToNull": "error",
+        "noEvolvingTypes": "error",
+        "noExplicitAny": "off",
+        "noForIn": "warn",
+        "noLeakedRender": "warn",
+        "noReactForwardRef": "error",
+        "noSkippedTests": "error",
+        "noUnassignedVariables": "error",
+        "noUnknownAttribute": "error",
+        "noUnnecessaryConditions": "error",
+        "noUnusedExpressions": "error",
+        "noVar": "error",
+        "useArraySortCompare": "warn",
+        "useAwait": "error",
+        "useErrorMessage": "error"
       }
     }
   }

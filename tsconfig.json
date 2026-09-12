@@ -16,7 +16,7 @@
     "strict": true,
     "strictNullChecks": true,
     "target": "ES2020",
-    "types": ["vite/client"]
+    "types": ["vite/client", "node"]
   },
   "exclude": ["node_modules", "dist"],
   "include": ["**/*.ts"]
