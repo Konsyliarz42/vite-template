@@ -57,6 +57,16 @@
             "checkTypes": true
           }
         },
+        "noUnusedImports": "error",
+        "noUnusedInstantiation": "error",
+        "noUnusedPrivateClassMembers": {
+          "fix": "none",
+          "level": "warn"
+        },
+        "noUnusedVariables": {
+          "fix": "none",
+          "level": "warn"
+        },
         "useUniqueElementIds": "warn"
       },
       "performance": {
