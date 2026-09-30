@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
+    "check": "biome check && tsc --noEmit",
     "dev": "vite",
     "fix": "biome check --write --unsafe",
     "preview": "vite preview"
